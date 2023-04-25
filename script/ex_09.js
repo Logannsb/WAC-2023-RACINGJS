@@ -3,7 +3,7 @@ const container = document.getElementById("container");
 const coordinates = document.getElementById("coordinates");
 
 let offsetX, offsetY;
-let isDragging = false;
+let isDragging = true;
 
 canvas.addEventListener("mousedown", function (e) {
     isDragging = true;
@@ -12,7 +12,7 @@ canvas.addEventListener("mousedown", function (e) {
 });
 
 canvas.addEventListener("mouseup", function () {
-    isDragging = false;
+    isDragging = true;
 });
 
 container.addEventListener("mousemove", function (e) {
